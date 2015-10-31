@@ -3,9 +3,13 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
-	public float health;
+	public float maxHealth;
+	private float health;
 	public float money;
 	public float level;
+
+	private float x;
+	private Transform bar;
 
 
 	private GameObject behaviour;
@@ -16,8 +20,11 @@ public class Enemy : MonoBehaviour {
 		behaviour = GameObject.FindGameObjectWithTag ("Behaviour");
 		print("I am alive");
 		level = behaviour.GetComponent<GameBehaviour> ().level;
-		health = health * level;
-		money = money * level;
+		maxHealth = maxHealth * (level +1);
+		health = maxHealth;
+		money = money * (level + 1);
+		bar = transform.FindChild ("LifeBar");
+		x = bar.transform.localScale.x;
 
 	
 	}
@@ -31,6 +38,11 @@ public class Enemy : MonoBehaviour {
 	public void TakeDamage(float damage){
 
 		health = health - damage;
+
+		float mult = health / maxHealth;
+		print (damage);
+
+		bar.localScale = new Vector3(x * mult ,bar.localScale.y,bar.localScale.z);
 
 		if (health <= 0) {
 

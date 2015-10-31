@@ -18,9 +18,10 @@ public class WeaponSystem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		damageLvl = PlayerPrefs.GetInt((weaponName + "dmg"));
-		atackSpeedLvl = PlayerPrefs.GetInt((weaponName + "speed"));
-		critChanceLvl = PlayerPrefs.GetInt((weaponName + "crit"));
+		damageLvl = PlayerPrefs.GetInt((weaponName + "dmg"),1);
+		atackSpeedLvl = PlayerPrefs.GetInt((weaponName + "speed"),1);
+		critChanceLvl = PlayerPrefs.GetInt((weaponName + "crit"),1);
+	
 
 
 		//define the lvl and attribute relationship
