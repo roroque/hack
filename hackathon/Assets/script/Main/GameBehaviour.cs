@@ -17,6 +17,8 @@ public class GameBehaviour : MonoBehaviour {
 	public GameObjectList[] enemiesList;
 	public GameObject[] bosses;
 
+	//public GameObject[] scenes;
+
 
 	
 
@@ -54,12 +56,20 @@ public class GameBehaviour : MonoBehaviour {
 
 
 
+
+
 	}
 
 	public void AddLevel(){
 
+
+
 		level++;
 		AddEnemy();
+
+//		//destroy current background
+//		Destroy(GameObject.FindGameObjectWithTag ("Background"));
+//		Instantiate (scenes [level% (enemiesList.Length - 1)]);
 
 	}
 
