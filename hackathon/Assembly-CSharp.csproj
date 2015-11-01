@@ -58,14 +58,14 @@
      <Compile Include="Assets\script\Main\Player.cs" />
      <Compile Include="Assets\script\Main\WeaponSystem.cs" />
      <Compile Include="Assets\script\Upgrade\UpgradeScreen.cs" />
-<<<<<<< HEAD
-=======
+     <Compile Include="Assets\script\Upgrade\UpgradeWeaponScreen.cs" />
+     <Compile Include="Assets\script\capsWeapons.cs" />
+     <Compile Include="Assets\script\moneyWeapons.cs" />
      <Compile Include="Assets\speedPlayer.cs" />
      <Compile Include="Assets\weaponBarracks.cs" />
      <Compile Include="Assets\wepCritialBarrack.cs" />
      <Compile Include="Assets\wepDamageBarrack.cs" />
      <Compile Include="Assets\wepSpeedBarrack.cs" />
->>>>>>> ef1e787f824ea73519cc5749d7760e405f1f86ef
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>

@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour {
 		money = money * (level + 1);
 		bar = transform.FindChild ("LifeBar");
 		x = bar.transform.localScale.x;
-		player = GameObject.FindGameObjectWithTag ("Player");
+		player = GameObject.FindGameObjectWithTag ("NewPlayer");
 		background = GameObject.FindGameObjectWithTag("Background");
 
 	
@@ -53,10 +53,13 @@ public class Enemy : MonoBehaviour {
 		transform.position = Vector3.MoveTowards(transform.position, movePoint.position, step);
 		if (transform.position.x == movePoint.position.x) {
 		
+			print(player.GetComponent<Player>());
 			player.GetComponent<Player> ().canShoot = true;
+
 
 		} else {
 			background = GameObject.FindGameObjectWithTag("Background");
+
 
 		}
 	}

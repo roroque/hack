@@ -20,14 +20,23 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		string weaponNa;
+		int selectedWep = 1;
 		atackSpeed = PlayerPrefs.GetFloat("atackSpeed",1.0f);
 		baseDamage = PlayerPrefs.GetFloat("baseDamage",1.0f);
 		criticalChance = PlayerPrefs.GetFloat("criticalChance",1.5f);
 		playerAnimator = transform.GetComponent<Animator> ();
-		int selected = PlayerPrefs.GetInt ("weapon", 2);
-		weapon = weapons [selected];
+		weaponNa =  PlayerPrefs.GetString("equipped","weapon1");
+		for (int i = 0; i < weapons.Length; i++) {
+			
+			if(weapons[i].GetComponent<WeaponSystem>().weaponName == weaponNa){
+				
+				weapon = Instantiate(weapons[i]);
+				selectedWep = selectedWep + i;
+			}
+		}		
 
+		playerAnimator.SetInteger ("weaponType", selectedWep);
 
 		canShoot = false;
 	
