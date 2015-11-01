@@ -63,6 +63,12 @@ public class GameBehaviour : MonoBehaviour {
 
 	}
 
+	public void GoToBarracks(){
+
+		Application.LoadLevel("barracks");
+
+	}
+
 
 
 }

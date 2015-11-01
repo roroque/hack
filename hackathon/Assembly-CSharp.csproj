@@ -45,6 +45,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Caps.cs" />
+     <Compile Include="Assets\Money.cs" />
      <Compile Include="Assets\script\BackgroundScroller.cs" />
      <Compile Include="Assets\script\Main\Boss.cs" />
      <Compile Include="Assets\script\Main\Enemy.cs" />
