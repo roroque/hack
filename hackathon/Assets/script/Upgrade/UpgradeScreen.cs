@@ -6,31 +6,32 @@ public class UpgradeScreen : MonoBehaviour {
 
 	private string weapon;
 	public GameObject[] weapons;
-	private GameObject selected;
+	public GameObject selected;
 	private GameObject player;
 
 
-	private float	playerDamage;
-	private float playerDamageLvlCost;
+	public float	playerDamage;
+	public float playerDamageLvlCost;
 	
-	private float	playerAtackSpeed;
-	private float playerAtackSpeedLvlCost;
+	public float	playerAtackSpeed;
+	public float playerAtackSpeedLvlCost;
 	
-	private float	playerCritical;
-	private float playerCriticalLvlCost;
+	public float	playerCritical;
+	public float playerCriticalLvlCost;
 
 
-	private int	weaponDamageLvl;
-	private float weaponDamageLvlCost;
+	public int	weaponDamageLvl;
+	public float weaponDamageLvlCost;
 
-	private int	weaponAtackSpeedLvl;
-	private float weaponAtackSpeedLvlCost;
+	public int	weaponAtackSpeedLvl;
+	public float weaponAtackSpeedLvlCost;
 
-	private int	weaponCriticalLvl;
-	private float weaponCriticalLvlCost;
+	public int	weaponCriticalLvl;
+	public float weaponCriticalLvlCost;
 
 		
-	private float money;
+	public float money;
+	public int caps;
 
 
 	
@@ -41,7 +42,7 @@ public class UpgradeScreen : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		weapon =  PlayerPrefs.GetString("equipped");
+		weapon =  PlayerPrefs.GetString("equipped","weapon1");
 		for (int i = 0; i < weapons.Length; i++) {
 
 			if(weapons[i].GetComponent<WeaponSystem>().weaponName == weapon){
@@ -54,6 +55,7 @@ public class UpgradeScreen : MonoBehaviour {
 			}
 		}
 		money = PlayerPrefs.GetFloat ("money", 0.0F);
+		caps = PlayerPrefs.GetInt ("caps", 0);
 
 		playerAtackSpeed = PlayerPrefs.GetFloat("atackSpeed",1.0f);
 		playerDamage = PlayerPrefs.GetFloat("baseDamage",1.0f);
@@ -64,6 +66,9 @@ public class UpgradeScreen : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		playerAtackSpeed = PlayerPrefs.GetFloat("atackSpeed",1.0f);
+		playerDamage = PlayerPrefs.GetFloat("baseDamage",1.0f);
+		playerCritical = PlayerPrefs.GetFloat("criticalChance",1.5f);
 	
 	}
 
@@ -92,7 +97,9 @@ public class UpgradeScreen : MonoBehaviour {
 		
 		if(money >= playerAtackSpeedLvlCost)
 		{
-			playerAtackSpeed++;
+
+			playerAtackSpeed = playerAtackSpeed + 1;
+
 			PlayerPrefs.SetFloat("atackSpeed",playerAtackSpeed);
 			money = money - playerAtackSpeedLvlCost;
 			PlayerPrefs.SetFloat ("money", money);
@@ -112,7 +119,7 @@ public class UpgradeScreen : MonoBehaviour {
 		
 		if(money >= playerCriticalLvlCost)
 		{
-			playerCritical++;
+			playerCritical = playerCritical + 1;
 			money = money - playerCriticalLvlCost;
 			PlayerPrefs.SetFloat("criticalChance",playerCritical);
 			PlayerPrefs.SetFloat ("money", money);
@@ -130,11 +137,13 @@ public class UpgradeScreen : MonoBehaviour {
 //WEAPON UPGRADES
 
 	public void UpgradeWeaponDamage(){
+	
+		selected = GameObject.FindGameObjectWithTag("Weapon");
 
 		if(money >= weaponDamageLvlCost)
 		{
 			weaponDamageLvl++;
-			selected.GetComponent<WeaponSystem>().setDamageLvl(weaponDamageLvl);
+			selected.gameObject.GetComponent<WeaponSystem>().setDamageLvl(weaponDamageLvl);
 			money = money - weaponDamageLvlCost;
 			PlayerPrefs.SetFloat ("money", money);
 
@@ -148,11 +157,13 @@ public class UpgradeScreen : MonoBehaviour {
 
 
 	public void UpgradeWeaponAtackSpeed(){
-		
+		selected = GameObject.FindGameObjectWithTag("Weapon");
+
+
 		if(money >= weaponAtackSpeedLvlCost)
 		{
 			weaponAtackSpeedLvl++;
-			selected.GetComponent<WeaponSystem>().setDamageLvl(weaponAtackSpeedLvl);
+			selected.gameObject.GetComponent<WeaponSystem>().setAtackSpeedLvl(weaponAtackSpeedLvl);
 			money = money - weaponAtackSpeedLvlCost;
 			PlayerPrefs.SetFloat ("money", money);
 			
@@ -168,11 +179,14 @@ public class UpgradeScreen : MonoBehaviour {
 
 
 	public void UpgradeWeaponCritical(){
+		selected = GameObject.FindGameObjectWithTag("Weapon");
+
+
 		
 		if(money >= weaponCriticalLvlCost)
 		{
 			weaponCriticalLvl++;
-			selected.GetComponent<WeaponSystem>().setDamageLvl(weaponCriticalLvl);
+			selected.gameObject.GetComponent<WeaponSystem>().setCritChanceLvl(weaponCriticalLvl);
 			money = money - weaponCriticalLvlCost;
 			PlayerPrefs.SetFloat ("money", money);
 			
@@ -180,6 +194,19 @@ public class UpgradeScreen : MonoBehaviour {
 		
 		//increase cost
 		weaponCriticalLvlCost = weaponCriticalLvlCost * weaponCriticalLvl;
+		
+	}
+
+	public void GoToAnimation(){
+		
+		Application.LoadLevel("animation");
+		
+	}
+
+
+	public void GoToCompraArma(){
+		
+		Application.LoadLevel("compraArma");
 		
 	}
 

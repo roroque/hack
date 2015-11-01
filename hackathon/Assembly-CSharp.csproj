@@ -47,6 +47,10 @@
   <ItemGroup>
      <Compile Include="Assets\Caps.cs" />
      <Compile Include="Assets\Money.cs" />
+     <Compile Include="Assets\capsBarracks.cs" />
+     <Compile Include="Assets\criticalPlayer.cs" />
+     <Compile Include="Assets\damagePlayer.cs" />
+     <Compile Include="Assets\moneyBarracks.cs" />
      <Compile Include="Assets\script\BackgroundScroller.cs" />
      <Compile Include="Assets\script\Main\Boss.cs" />
      <Compile Include="Assets\script\Main\Enemy.cs" />
@@ -54,6 +58,11 @@
      <Compile Include="Assets\script\Main\Player.cs" />
      <Compile Include="Assets\script\Main\WeaponSystem.cs" />
      <Compile Include="Assets\script\Upgrade\UpgradeScreen.cs" />
+     <Compile Include="Assets\speedPlayer.cs" />
+     <Compile Include="Assets\weaponBarracks.cs" />
+     <Compile Include="Assets\wepCritialBarrack.cs" />
+     <Compile Include="Assets\wepDamageBarrack.cs" />
+     <Compile Include="Assets\wepSpeedBarrack.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
