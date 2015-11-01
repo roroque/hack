@@ -1,30 +1,15 @@
 ﻿<Properties>
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Main/Boss.cs">
-=======
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Main/Enemy.cs">
->>>>>>> 87e34f4f7cd98e7826b482b2325a518fe4548bdd
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Main/Player.cs">
     <Files>
-      <File FileName="Assets/script/Main/Enemy.cs" Line="30" Column="34" />
+      <File FileName="Assets/script/Main/Enemy.cs" Line="101" Column="1" />
       <File FileName="Assets/script/Main/WeaponSystem.cs" Line="1" Column="1" />
       <File FileName="Assets/script/BackgroundScroller.cs" Line="1" Column="1" />
-<<<<<<< HEAD
       <File FileName="Assets/script/Main/Player.cs" Line="28" Column="49" />
-      <File FileName="Assets/script/Main/Enemy.cs" Line="6" Column="1" />
-      <File FileName="Assets/script/Main/GameBehaviour.cs" Line="54" Column="3" />
-      <File FileName="Assets/script/Main/Boss.cs" Line="27" Column="3" />
-=======
-      <File FileName="Assets/script/Main/Player.cs" Line="1" Column="1" />
->>>>>>> 87e34f4f7cd98e7826b482b2325a518fe4548bdd
+      <File FileName="Assets/script/Main/GameBehaviour.cs" Line="27" Column="41" />
+      <File FileName="Assets/script/Main/Boss.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
->>>>>>> 792cbe063b6f6d91f966b1fcbf01933752adac5c
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

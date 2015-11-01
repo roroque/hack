@@ -106,7 +106,15 @@ public class WeaponSystem : MonoBehaviour {
 				fullDamage = fullDamage * criticalMultiplier;
 
 			}
-			enemy.GetComponent<Enemy> ().TakeDamage (fullDamage);
+			if(enemy.GetComponent<Enemy> ()){
+
+				enemy.GetComponent<Enemy> ().TakeDamage (fullDamage);
+			}
+			else{
+				enemy.GetComponent<Boss>().TakeDamage(fullDamage);
+
+			}
+
 
 			//spawn a bulllet and make it go to enemy. transform.position
 
