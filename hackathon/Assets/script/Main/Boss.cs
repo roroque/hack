@@ -24,7 +24,13 @@ public class Boss : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		
+
+		maxHealth = 100;
+		money = 100;
+		speed = 2;
+		var auxPoint = GameObject.FindGameObjectWithTag ("Point");
+		movePoint = auxPoint.transform;
+
 		behaviour = GameObject.FindGameObjectWithTag ("Behaviour");
 		print("I am alive");
 		level = behaviour.GetComponent<GameBehaviour> ().level;
