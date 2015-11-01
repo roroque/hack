@@ -58,8 +58,7 @@ public class Boss : MonoBehaviour {
 			player.GetComponent<Player> ().canShoot = true;
 			
 		} else {
-			
-			background.GetComponent<BackgroundScroller>().Go();
+				background = GameObject.FindGameObjectWithTag("Background");
 		}
 	}
 	

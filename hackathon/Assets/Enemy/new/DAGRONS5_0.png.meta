@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f4ce9fcd84c0c479aa23bad772b405e1
-timeCreated: 1446336989
+timeCreated: 1446355177
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -68,8 +68,8 @@ TextureImporter:
         y: 247
         width: 66
         height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .620074391, y: .33152771}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: DAGRONS5_0_1
       rect:
@@ -79,7 +79,7 @@ TextureImporter:
         width: 59
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: DAGRONS5_0_2
       rect:
@@ -88,8 +88,8 @@ TextureImporter:
         y: 277
         width: 68
         height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5416224, y: .290633112}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: DAGRONS5_0_3
       rect:
@@ -98,8 +98,8 @@ TextureImporter:
         y: 241
         width: 80
         height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .199813142}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: DAGRONS5_0_4
       rect:
@@ -108,8 +108,8 @@ TextureImporter:
         y: 137
         width: 37
         height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .484319031, y: .303763002}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: DAGRONS5_0_5
       rect:
@@ -119,7 +119,7 @@ TextureImporter:
         width: 173
         height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: DAGRONS5_0_6
       rect:
@@ -128,8 +128,8 @@ TextureImporter:
         y: 137
         width: 84
         height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .520720363, y: .220654517}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: DAGRONS5_0_7
       rect:
@@ -138,8 +138,8 @@ TextureImporter:
         y: 55
         width: 37
         height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .515680373, y: .313904673}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: DAGRONS5_0_8
       rect:
@@ -148,8 +148,8 @@ TextureImporter:
         y: 96
         width: 64
         height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .499999762, y: .313904673}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: DAGRONS5_0_9
       rect:
@@ -158,8 +158,8 @@ TextureImporter:
         y: 72
         width: 28
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .499998897, y: .354954988}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: DAGRONS5_0_10
       rect:
@@ -168,8 +168,8 @@ TextureImporter:
         y: 7
         width: 175
         height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .503315151, y: .333099157}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
