@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d4aac0735a2f448189aa9449f83ca55a
-timeCreated: 1446314102
+guid: d7f2548b16f9c49a591918eacefa0339
+timeCreated: 1446333149
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -15,18 +15,6 @@ TextureImporter:
     21300016: sprite character_8
     21300018: sprite character_9
     21300020: sprite character_10
-    21300022: sprite character_11
-    21300024: sprite character_12
-    21300026: sprite character_13
-    21300028: sprite character_14
-    21300030: sprite character_15
-    21300032: sprite character_16
-    21300034: sprite character_17
-    21300036: sprite character_18
-    21300038: sprite character_19
-    21300040: sprite character_20
-    21300042: sprite character_21
-    21300044: sprite character_22
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -52,7 +40,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -76,9 +64,9 @@ TextureImporter:
     - name: sprite character_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 226
-        width: 21
+        x: 14
+        y: 112
+        width: 17
         height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -86,8 +74,8 @@ TextureImporter:
     - name: sprite character_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 226
+        x: 63
+        y: 112
         width: 37
         height: 91
       alignment: 0
@@ -96,9 +84,9 @@ TextureImporter:
     - name: sprite character_2
       rect:
         serializedVersion: 2
-        x: 91
-        y: 226
-        width: 48
+        x: 116
+        y: 112
+        width: 47
         height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -106,8 +94,8 @@ TextureImporter:
     - name: sprite character_3
       rect:
         serializedVersion: 2
-        x: 151
-        y: 226
+        x: 179
+        y: 111
         width: 37
         height: 92
       alignment: 0
@@ -116,8 +104,8 @@ TextureImporter:
     - name: sprite character_4
       rect:
         serializedVersion: 2
-        x: 199
-        y: 226
+        x: 244
+        y: 111
         width: 22
         height: 92
       alignment: 0
@@ -126,8 +114,8 @@ TextureImporter:
     - name: sprite character_5
       rect:
         serializedVersion: 2
-        x: 235
-        y: 226
+        x: 294
+        y: 111
         width: 36
         height: 92
       alignment: 0
@@ -136,29 +124,29 @@ TextureImporter:
     - name: sprite character_6
       rect:
         serializedVersion: 2
-        x: 283
-        y: 226
+        x: 347
+        y: 113
         width: 45
-        height: 91
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite character_7
       rect:
         serializedVersion: 2
-        x: 343
-        y: 226
-        width: 39
-        height: 91
+        x: 408
+        y: 113
+        width: 37
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite character_8
       rect:
         serializedVersion: 2
-        x: 391
-        y: 226
-        width: 33
+        x: 469
+        y: 112
+        width: 27
         height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,140 +154,20 @@ TextureImporter:
     - name: sprite character_9
       rect:
         serializedVersion: 2
-        x: 8
-        y: 118
-        width: 41
-        height: 88
+        x: 0
+        y: 8
+        width: 49
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: sprite character_10
       rect:
         serializedVersion: 2
-        x: 67
-        y: 118
-        width: 42
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_11
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 118
-        width: 78
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_12
-      rect:
-        serializedVersion: 2
-        x: 235
-        y: 118
-        width: 63
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_13
-      rect:
-        serializedVersion: 2
-        x: 307
-        y: 118
-        width: 40
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_14
-      rect:
-        serializedVersion: 2
-        x: 367
-        y: 118
-        width: 40
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_15
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 118
-        width: 39
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_16
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 9
-        width: 35
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_17
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 9
-        width: 46
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_18
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 9
-        width: 48
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_19
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 9
-        width: 58
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_20
-      rect:
-        serializedVersion: 2
-        x: 247
-        y: 9
+        x: 61
+        y: 8
         width: 36
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_21
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 9
-        width: 60
         height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sprite character_22
-      rect:
-        serializedVersion: 2
-        x: 367
-        y: 9
-        width: 43
-        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
