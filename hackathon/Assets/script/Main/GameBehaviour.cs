@@ -24,6 +24,7 @@ public class GameBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		PlayerPrefs.DeleteAll ();
 		money = PlayerPrefs.GetFloat ("money", 0.0F);
 		caps = PlayerPrefs.GetInt ("caps", 0);
 		level = PlayerPrefs.GetInt ("level", 0);

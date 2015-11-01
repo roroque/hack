@@ -39,7 +39,7 @@ public class Boss : MonoBehaviour {
 		money = money * (level + 1);
 		bar = transform.FindChild ("LifeBar");
 		x = bar.transform.localScale.x;
-		player = GameObject.FindGameObjectWithTag ("Player");
+		player = GameObject.FindGameObjectWithTag ("NewPlayer");
 		background = GameObject.FindGameObjectWithTag("Background");
 		
 		
@@ -58,7 +58,7 @@ public class Boss : MonoBehaviour {
 			player.GetComponent<Player> ().canShoot = true;
 			
 		} else {
-				background = GameObject.FindGameObjectWithTag("Background");
+			background.GetComponent<BackgroundScroller>().Go();
 		}
 	}
 	
@@ -76,6 +76,8 @@ public class Boss : MonoBehaviour {
 			
 			player.GetComponent<Player>().canShoot = false;
 			behaviour.GetComponent<GameBehaviour>().AddLevel();
+			background.GetComponent<BackgroundScroller>().next();
+
 			Destroy (gameObject);
 			print("i am dead");
 			

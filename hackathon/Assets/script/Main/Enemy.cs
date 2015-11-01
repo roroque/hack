@@ -58,7 +58,8 @@ public class Enemy : MonoBehaviour {
 
 
 		} else {
-			background = GameObject.FindGameObjectWithTag("Background");
+			background.GetComponent<BackgroundScroller>().Go();
+
 
 
 		}

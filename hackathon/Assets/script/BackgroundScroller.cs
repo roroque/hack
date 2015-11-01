@@ -5,12 +5,17 @@ public class BackgroundScroller : MonoBehaviour {
 
 	public float speed = 0;
 	public BackgroundScroller current;
+	public Texture[] textures;
+	private int selected = 0;
 
 	float pos = 0;
 
 	// Use this for initialization
 	void Start () {
 		current = this;
+
+
+
 	}
 
 	public void Go (){
@@ -21,6 +26,15 @@ public class BackgroundScroller : MonoBehaviour {
 		var renderer = GetComponent<Renderer> ();
 		renderer.material.mainTextureOffset = new Vector2 (pos, 0);
 
+
+	}
+
+	public void next(){
+
+		selected++;
+		selected = selected % textures.Length;
+		var myRenderer = gameObject.GetComponent<Renderer> ();
+		myRenderer.material.mainTexture = textures [selected];
 
 	}
 	
