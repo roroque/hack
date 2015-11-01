@@ -1,18 +1,6 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
-=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Main/Enemy.cs">
-    <Files>
-      <File FileName="Assets/script/Main/Enemy.cs" Line="30" Column="34" />
-      <File FileName="Assets/script/Main/WeaponSystem.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/BackgroundScroller.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/Main/Player.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
->>>>>>> 792cbe063b6f6d91f966b1fcbf01933752adac5c
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

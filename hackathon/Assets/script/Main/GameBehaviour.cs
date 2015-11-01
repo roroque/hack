@@ -40,9 +40,9 @@ public class GameBehaviour : MonoBehaviour {
 	}
 
 	public void AddEnemy(){
-		int size = enemiesList[level].enemies.Length - 1;
+		int size = enemiesList[level % enemiesList.Length].enemies.Length -1;
 		int selected = Random.Range (0, size);
-		Instantiate (enemiesList[level].enemies[selected]);
+		Instantiate (enemiesList[level % enemiesList.Length].enemies[selected]);
 		//make enemy go to the center of the screen
 		//set player as running so it will not shoot
 
@@ -50,10 +50,8 @@ public class GameBehaviour : MonoBehaviour {
 
 	public void CallBoss(){
 		Destroy(GameObject.FindGameObjectWithTag ("Enemy"));
-		Instantiate (bosses [level]);
-		//make booos go to the center of the screen
-		//set player as running so it will not shoot
-		//start timer to boss
+		Instantiate (bosses [level% enemiesList.Length]);
+
 
 
 	}
@@ -62,6 +60,12 @@ public class GameBehaviour : MonoBehaviour {
 
 		level++;
 		AddEnemy();
+
+	}
+
+	public void GoToBarracks(){
+
+		Application.LoadLevel("barracks");
 
 	}
 

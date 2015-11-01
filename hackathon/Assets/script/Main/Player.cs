@@ -25,7 +25,7 @@ public class Player : MonoBehaviour {
 		baseDamage = PlayerPrefs.GetFloat("baseDamage",1.0f);
 		criticalChance = PlayerPrefs.GetFloat("criticalChance",1.5f);
 		playerAnimator = transform.GetComponent<Animator> ();
-		int selected = PlayerPrefs.GetInt ("weapon", 0);
+		int selected = PlayerPrefs.GetInt ("weapon", 2);
 		weapon = weapons [selected];
 
 
