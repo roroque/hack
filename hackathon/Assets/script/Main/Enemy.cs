@@ -56,7 +56,8 @@ public class Enemy : MonoBehaviour {
 			player.GetComponent<Player> ().canShoot = true;
 
 		} else {
-			background = GameObject.FindGameObjectWithTag("Background");
+			background.GetComponent<BackgroundScroller>().Go();
+
 
 		}
 	}

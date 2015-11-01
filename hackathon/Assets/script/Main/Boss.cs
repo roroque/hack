@@ -58,7 +58,7 @@ public class Boss : MonoBehaviour {
 			player.GetComponent<Player> ().canShoot = true;
 			
 		} else {
-				background = GameObject.FindGameObjectWithTag("Background");
+			background.GetComponent<BackgroundScroller>().Go();
 		}
 	}
 	
@@ -76,6 +76,8 @@ public class Boss : MonoBehaviour {
 			
 			player.GetComponent<Player>().canShoot = false;
 			behaviour.GetComponent<GameBehaviour>().AddLevel();
+			background.GetComponent<BackgroundScroller>().next();
+
 			Destroy (gameObject);
 			print("i am dead");
 			
