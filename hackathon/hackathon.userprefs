@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Main/Enemy.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Upgrade/UpgradeScreen.cs">
     <Files>
       <File FileName="Assets/script/Main/GameBehaviour.cs" Line="27" Column="28" />
-      <File FileName="Assets/script/Main/Boss.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/Main/Player.cs" Line="40" Column="23" />
-      <File FileName="Assets/script/Main/Enemy.cs" Line="57" Column="4" />
-      <File FileName="Assets/script/BackgroundScroller.cs" Line="37" Column="55" />
+      <File FileName="Assets/script/Main/Boss.cs" Line="79" Column="57" />
+      <File FileName="Assets/script/Main/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Main/Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/BackgroundScroller.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Upgrade/UpgradeScreen.cs" Line="51" Column="68" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
