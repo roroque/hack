@@ -1,11 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Main/Player.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/Main/Boss.cs">
     <Files>
       <File FileName="Assets/script/Main/WeaponSystem.cs" Line="109" Column="57" />
       <File FileName="Assets/script/BackgroundScroller.cs" Line="1" Column="1" />
       <File FileName="Assets/script/Main/Player.cs" Line="28" Column="49" />
-      <File FileName="Assets/script/Main/Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/Main/Enemy.cs" Line="6" Column="1" />
+      <File FileName="Assets/script/Main/GameBehaviour.cs" Line="54" Column="3" />
+      <File FileName="Assets/script/Main/Boss.cs" Line="27" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

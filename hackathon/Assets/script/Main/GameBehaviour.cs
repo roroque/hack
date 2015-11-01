@@ -51,9 +51,7 @@ public class GameBehaviour : MonoBehaviour {
 	public void CallBoss(){
 		Destroy(GameObject.FindGameObjectWithTag ("Enemy"));
 		Instantiate (bosses [level]);
-		//make booos go to the center of the screen
-		//set player as running so it will not shoot
-		//start timer to boss
+
 
 
 	}
